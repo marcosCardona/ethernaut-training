@@ -1,15 +1,22 @@
-# Basic Sample Hardhat Project
+# Ethernaut challenge 13 - Gatekeeper One
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Create a **secrets.json** file at root level with the following format:
 
-Try running some of the following tasks:
+```json
+{
+    "key" : "<RINKEBY WALLET SECRET>",
+    "url" : "<RINKEBY PROVIDER URL>"
+}
+```
+
+Deploy the **GatekeeperAttacker.sol** contract running:
 
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat run --network rinkeby scripts/gatekeeper-attacker-deployer.js
+```
+
+Replace **gatekeeperAttackerAddress** with your deployed contract address and **gateAddress** with the ethernaut's contract addy in **bruteforce-enter.js**, then run:
+
+```shell
+npx hardhat run --network rinkeby scripts/bruteforce-enter.js
 ```
