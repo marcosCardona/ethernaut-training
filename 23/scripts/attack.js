@@ -35,8 +35,6 @@ async function main() {
   await tx2.wait();
   
   await printBalances();
-
-  console.log("Succesful attack!");
 }
 
 async function printBalances(){

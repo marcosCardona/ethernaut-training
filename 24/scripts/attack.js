@@ -43,8 +43,6 @@ async function main() {
 
   // Set the admin to us by storage collision
   await (await puzzleWallet.setMaxBalance(signer.address)).wait();
-
-  console.log("Succesful attack!");
 }
 
 main()

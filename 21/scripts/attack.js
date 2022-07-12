@@ -10,8 +10,6 @@ async function main() {
   console.log("Shop Attacker deployed to:", shopAttacker.address)
 
   await shopAttacker.attack(victimAddress);
-
-  console.log("Succesful attack!");
 }
 
 main()

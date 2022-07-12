@@ -13,8 +13,6 @@ async function main() {
   console.log("Denial Attacker deployed to:", denialAttacker.address)
 
   await denial.setWithdrawPartner(denialAttacker.address);
-
-  console.log("Succesful attack!");
 }
 
 main()

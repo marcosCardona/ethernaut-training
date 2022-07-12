@@ -49,8 +49,6 @@ async function main() {
 
     await printBalances();
   }
-
-  console.log("Succesful attack!");
 }
 
 async function printBalances(){

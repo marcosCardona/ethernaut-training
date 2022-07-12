@@ -18,8 +18,6 @@ async function main() {
 
   const myAddressAsUint =  await preservationAttacker.getAdressAsUint(myPublicKey);
   await preservation.setFirstTime(myAddressAsUint, {gasLimit: 50000}); // was running out of gas
-
-  console.log("Succesful attack!");
 }
 
 main()
